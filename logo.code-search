@@ -1,0 +1,137 @@
+# Query: logo
+# ContextLines: 1
+
+59 results - 18 files
+
+6-month-course.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+6-week-course.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="logo.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+about.html:
+  60        <header>
+  61:         <div class="logo">
+  62:           <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  63          </div>
+
+checkout.html:
+  82              <header>
+  83:                 <div class="logo">
+  84:                     <img src="logo.svg" alt="Empowering the Nation Logo">
+  85                  </div>
+
+child-minding.html:
+  12      <header>
+  13:         <div class="logo">
+  14:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  15          </div>
+
+contact.html:
+  48                  <ul class="social-icons">
+  49:                   <li><a href='https://www.instagram.com/empowering.the.nation24/'><img src="icons/instagram-seeklogo.svg" alt="Instagram" width="30" height="30"></a></li>
+  50                    <li><a href='https://www.facebook.com/empowering.the.nation912961/'><img src="icons/icons8-facebook-100.svg" alt="Facebook" width="30" height="30"></a></li>
+
+  67          <header>
+  68:           <div class="logo">
+  69:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  70            </div>
+
+cooking.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="logo.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+courses.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+first-aid.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="logo.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+footer.html:
+  3      <div class="footer-content">
+  4:       <div class="footer-logo">
+  5:         <img src="footer-logo.svg" alt="Footer Logo">
+  6        </div>
+
+garden-maintenance.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+index.html:
+  41        <header>
+  42:         <div class="logo">
+  43:           <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  44          </div>
+
+landscaping.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+life-skills.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="logo.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+nav.html:
+  2  <header>
+  3:     <div class="logo">
+  4:       <img src="logo.svg" alt="Empowering the Nation Logo">
+  5      </div>
+
+notes:
+   25    
+   26:   header .logo img {
+   27      max-height: 50px;
+
+  186    
+  187:   .footer-logo img {
+  188      max-height: 50px;
+
+  364    
+  365:   .footer-logo img {
+  366:     width: 150px; /* Adjust logo size */
+  367    }
+
+sewing.html:
+  10      <header>
+  11:         <div class="logo">
+  12:             <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+  13          </div>
+
+css\style.css:
+   25  
+   26: header .logo img {
+   27    max-height: 50px;
+
+  189  
+  190: .footer-logo img {
+  191:   width: 150px; /* Adjust logo size */
+  192  }
+
+  337  
+  338: header .logo img {
+  339    max-height: 50px;
+
+  501  
+  502: .footer-logo img {
+  503:   width: 150px; /* Adjust logo size */
+  504  }

@@ -1,0 +1,342 @@
+# Query: footer
+# ContextLines: 1
+
+118 results - 17 files
+
+6-month-course.html:
+  69  
+  70:     <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <p>Contact Us:</p>
+                <a href="mailto:info@etn.co.za">info@etn.co.za</a>
+                <a href="tel:+27123456789">+27 12 345 6789</a>
+                <p>Find Us:</p>
+                <a href="#">Venue 1: Address</a>
+                <a href="#">Venue 2: Address</a>
+                <a href="#">Venue 3: Address</a>
+                <p>Since 2018</p>
+            </div>
+        </div>
+    </footer>
+  84  </body>
+
+6-week-course.html:
+  63  
+  64:     <footer>
+  65:         <div class="footer-content">
+  66:             <div class="footer-links">
+  67                  <p>Contact Us:</p>
+
+  76          </div>
+  77:     </footer>
+  78  </body>
+
+about.html:
+  53  
+  54:   <!-- Include Footer -->
+  55:   <div id="footer-placeholder"></div>
+  56  
+
+  75  
+  76:     document.getElementById('footer-placeholder').innerHTML = `
+  77:       <!-- Footer -->
+  78:       <footer>
+  79:         <div class="footer-content">
+  80            <p>Since 2018</p>
+
+  83          </div>
+  84:       </footer>
+  85      `;
+
+checkout.html:
+   72  
+   73:     <!-- Footer -->
+   74:     <div id="footer-placeholder"></div>
+   75  
+
+   95  
+   96:         // Populate Footer
+   97:         document.getElementById('footer-placeholder').innerHTML = `
+   98:             <!-- Footer -->
+   99:             <footer>
+  100:                 <div class="footer-content">
+  101:                     <div class="footer-links">
+  102                          <p>Since 2018</p>
+
+  106                  </div>
+  107:             </footer>
+  108          `;
+
+child-minding.html:
+  56  
+  57:     <!-- Footer Section -->
+  58:     <footer>
+  59:         <div class="footer-content">
+  60:             <div class="footer-links">
+  61                  <p>Contact Us:</p>
+
+  70          </div>
+  71:     </footer>
+  72  </body>
+
+contact.html:
+  38  
+  39:     <!-- Footer Placeholder -->
+  40:     <div id="footer-placeholder"></div>
+  41  
+  42      <script>
+  43:       // Insert navigation and footer
+  44        document.getElementById('nav-placeholder').innerHTML = `
+
+  60        `;
+  61:       document.getElementById('footer-placeholder').innerHTML = `
+  62:         <!-- Footer -->
+  63:         <footer>
+  64:           <div class="footer-content">
+  65:             <div class="footer-links">
+  66                <p>Since 2018</p>
+
+  70            </div>
+  71:         </footer>
+  72        `;
+
+cooking.html:
+  48  
+  49:     <footer>
+  50:         <div class="footer-content">
+  51:             <div class="footer-links">
+  52                  <p>Contact Us:</p>
+
+  61          </div>
+  62:     </footer>
+  63  </body>
+
+courses.html:
+  51  
+  52:     <footer>
+  53:         <div class="footer-content">
+  54:             <div class="footer-links">
+  55                  <p>Contact Us:</p>
+
+  64          </div>
+  65:     </footer>
+  66  </body>
+
+first-aid.html:
+  54  
+  55:     <footer>
+  56:         <div class="footer-content">
+  57:             <div class="footer-links">
+  58                  <p>Contact Us:</p>
+
+  67          </div>
+  68:     </footer>
+  69  </body>
+
+footer.html:
+   1: <!-- Footer -->
+   2: <footer>
+   3:     <div class="footer-content">
+   4:       <div class="footer-logo">
+   5:         <img src="footer-logo.svg" alt="Footer Logo">
+   6        </div>
+   7:       <div class="footer-links">
+   8          <p>Since 2018</p>
+
+  12      </div>
+  13:   </footer>
+  14    
+
+garden-maintenance.html:
+  46  
+  47:     <footer>
+  48:         <div class="footer-content">
+  49:             <div class="footer-links">
+  50                  <p>Contact Us:</p>
+
+  59          </div>
+  60:     </footer>
+  61  </body>
+
+index.html:
+  34  
+  35:   <!-- Include Footer -->
+  36:   <div id="footer-placeholder"></div>
+  37  
+
+  55      `;
+  56:     document.getElementById('footer-placeholder').innerHTML = `
+  57:       <!-- Footer -->
+  58:       <footer>
+  59:         <div class="footer-content">
+  60:           <div class="footer-links">
+  61              <p>Since 2018</p>
+
+  65          </div>
+  66:       </footer>
+  67      `;
+
+landscaping.html:
+  53  
+  54:     <footer>
+  55:         <div class="footer-content">
+  56:             <div class="footer-links">
+  57                  <p>Contact Us:</p>
+
+  66          </div>
+  67:     </footer>
+  68  </body>
+
+life-skills.html:
+  50  
+  51:     <footer>
+  52:         <div class="footer-content">
+  53:             <div class="footer-links">
+  54                  <p>Contact Us:</p>
+
+  63          </div>
+  64:     </footer>
+  65  </body>
+
+notes:
+  167    
+  168:   /* Footer Styles */
+  169:   footer {
+  170      background: #333;
+
+  178    
+  179:   .footer-content {
+  180      max-width: 1200px;
+
+  186    
+  187:   .footer-logo img {
+  188      max-height: 50px;
+
+  190    
+  191:   .footer-links {
+  192      text-align: center;
+
+  194    
+  195:   .footer-links p {
+  196      margin-bottom: 0.5rem;
+
+  199    
+  200:   .footer-links a {
+  201      display: block;
+
+  206    
+  207:   .footer-links a:hover {
+  208      text-decoration: underline;
+
+  350    
+  351:   /* Footer Adjustments */
+  352:   footer {
+  353      background: #222;
+
+  358    
+  359:   .footer-content {
+  360      display: flex;
+
+  364    
+  365:   .footer-logo img {
+  366      width: 150px; /* Adjust logo size */
+
+  368    
+  369:   .footer-links {
+  370      margin-top: 20px;
+
+  372    
+  373:   .footer-links p {
+  374      margin: 5px 0;
+
+  376    
+  377:   .footer-links a {
+  378      color: #fff;
+
+  383    
+  384:   .footer-links a:hover {
+  385      text-decoration: underline;
+
+sewing.html:
+  55  
+  56:     <footer>
+  57:         <div class="footer-content">
+  58:             <div class="footer-links">
+  59                  <p>Contact Us:</p>
+
+  68          </div>
+  69:     </footer>
+  70  </body>
+
+css\style.css:
+  173  
+  174: /* Footer Styles */
+  175: footer {
+  176    background: #222;
+
+  181  
+  182: .footer-content {
+  183    max-width: 1200px;
+
+  189  
+  190: .footer-logo img {
+  191    width: 150px; /* Adjust logo size */
+
+  193  
+  194: .footer-links {
+  195    margin-top: 20px;
+
+  197  
+  198: .footer-links p {
+  199    margin: 5px 0;
+
+  202  
+  203: .footer-links a {
+  204    color: #fff;
+
+  209  
+  210: .footer-links a:hover {
+  211    text-decoration: underline;
+
+  485  
+  486: /* Footer Styles */
+  487: footer {
+  488    background: #222;
+
+  493  
+  494: .footer-content {
+  495    max-width: 1200px;
+
+  501  
+  502: .footer-logo img {
+  503    width: 150px; /* Adjust logo size */
+
+  505  
+  506: .footer-links {
+  507    margin-top: 20px;
+
+  509  
+  510: .footer-links p {
+  511    margin: 5px 0;
+
+  514  
+  515: .footer-links a {
+  516    color: #fff;
+
+  521  
+  522: .footer-links a:hover {
+  523    text-decoration: underline;
+
+  867  
+  868: /* Footer Styles */
+  869: footer {
+  870    background: #333;
+
+  878  
+  879: .footer-content {
+  880    max-width: 1200px;
+
+  883  
+  884: .footer-links p {
+  885    margin: 0.5rem 0;

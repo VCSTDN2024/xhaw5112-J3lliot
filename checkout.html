@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Checkout Page Content -->
+    <div class="checkout-page">
+        <!-- Courses in Cart -->
+        <div class="cart-details">
+            <h2>Courses in Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Price (R)</th>
+                    </tr>
+                </thead>
+                <tbody id="items">
+                    <!-- Cart items will be populated here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total Price:</td>
+                        <td id="total-price">R0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Discount:</td>
+                        <td id="discount-amount">R0.00</td>
+                    </tr>
+                    <tr>
+                        <td>VAT (15%):</td>
+                        <td id="vat-amount">R0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Final Amount:</td>
+                        <td id="final-amount">R0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="clear-cart">Empty Cart</button>
+        </div>
+
+        <!-- EFT Payment Option -->
+        <div class="eft-details">
+            <h2>Pay via EFT</h2>
+            <p>Bank Name: Bank</p>
+            <p>Account Number: 123456789</p>
+            <p>Branch Code: 987654</p>
+            <p>Reference: Your Name / Organization</p>
+            <p>Please email proof of payment to: empoweringnationstoday@gmail.com</p>
+        </div>
+
+        <!-- Online Payment Option -->
+        <div class="online-payment">
+            <h2>Pay Online</h2>
+            <form class="online-form" action="#" method="POST">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Visa</option>
+                    <option value="paypal">Mastercard</option>
+                    <option value="other">Other Payment Options</option>
+                </select>
+
+                <button type="button" onclick="showAlert()">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+
+        function showAlert() {
+            alert("Payment Is Successful!");
+        }
+
+        // Populate Navigation Bar
+        document.getElementById('nav-placeholder').innerHTML = `
+            <header>
+                <div class="logo">
+                    <img src="./images/logoEPN.png" alt="Empowering the Nation Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="checkout.html">Cart</a></li>
+                    </ul>
+                </nav>
+            </header>
+        `;
+
+        // Populate Footer
+        document.getElementById('footer-placeholder').innerHTML = `
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <p>Contact Us:</p>
+                        <a href="mailto:empoweringnationstoday@gmail.com">empoweringnationstoday@gmail.com</a>
+                        <a href="tel:+27123456789">+27 12 345 6789</a>
+                        <p>Find Us:</p>
+                        <a href="#">Venue 1: Address</a>
+                        <a href="#">Venue 2: Address</a>
+                        <a href="#">Venue 3: Address</a>
+                        <p>Since 2018</p>
+                    </div>
+                </div>
+            </footer>
+        `;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const VAT_RATE = 0.15;
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+            // Function to calculate total price, discount, and VAT
+            function calculateTotal() {
+                let totalAmount = 0;
+                let discount = 0;
+
+                // Calculate base total
+                cart.forEach(item => totalAmount += item.price);
+
+                // Apply discount: 5% for every item above 2, up to 50%
+                if (cart.length > 2) {
+                    discount = Math.min((cart.length - 1) * 0.05, 0.5);  // Max discount is 50%
+                    totalAmount = totalAmount * (1 - discount);
+                }
+
+                const vatAmount = totalAmount * VAT_RATE;
+                const finalAmount = totalAmount + vatAmount;
+                return { totalAmount, discount, vatAmount, finalAmount };
+            }
+
+            // Function to update cart display
+            function updateCartDisplay() {
+                const cartItemsContainer = document.getElementById('items');
+                cartItemsContainer.innerHTML = '';  // Clear current items
+
+                let { totalAmount, discount, vatAmount, finalAmount } = calculateTotal();
+
+                // Populate cart items
+                cart.forEach(item => {
+                    const itemElement = document.createElement('tr');
+                    itemElement.innerHTML = `
+                        <td>${item.course}</td>
+                        <td>R${item.price.toFixed(2)}</td>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+
+                // Update totals
+                document.getElementById('total-price').textContent = `R${totalAmount.toFixed(2)}`;
+                document.getElementById('discount-amount').textContent = discount > 0 ? `${(discount * 100).toFixed(0)}%` : '0%';
+                document.getElementById('vat-amount').textContent = `R${vatAmount.toFixed(2)}`;
+                document.getElementById('final-amount').textContent = `R${finalAmount.toFixed(2)}`;
+            }
+
+            // Function to clear cart
+            function clearCart() {
+                cart = [];  // Empty the cart array
+                localStorage.removeItem('cart');  // Clear cart from localStorage
+                updateCartDisplay();  // Refresh the cart display
+            }
+
+            // Add event listener to the "Empty Cart" button
+            document.querySelector('.clear-cart').addEventListener('click', clearCart);
+
+            // Update the cart display when page loads
+            updateCartDisplay();
+        });
+    </script>
+</body>
+</html>
