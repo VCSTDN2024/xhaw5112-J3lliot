@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleSixMonthCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Six Month Courses"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/headingFirstAid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Aid"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/labelFeesFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fees:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feesFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R1500"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/labelPurposeFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purpose:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purposeFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To provide first aid awareness and basic life support"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelContentFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wounds and bleeding\nBurns and fractures\nEmergency scene management\nCardio-Pulmonary Resuscitation (CPR)\nRespiratory distress e.g. Choking, blocked airway"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageFirstAid"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/firstaid"
+                android:contentDescription="First Aid Image"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/headingSewing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sewing"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/labelFeesSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fees:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feesSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R1500"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelPurposeSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purpose:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purposeSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To provide alterations and new garment tailoring services"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelContentSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Types of stitches\nThreading a sewing machine\nSewing buttons, zips, hems, and seams\nAlterations\nDesigning and sewing new garments"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageSewing"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/sewing"
+                android:contentDescription="Sewing Image"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/headingLandscaping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Landscaping"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/labelFeesLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fees:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feesLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R1500"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelPurposeLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purpose:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purposeLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To provide landscaping services for new and established gardens"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelContentLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indigenous and exotic plants and trees\nFixed structures (fountains, statues, benches, tables, built-in braai)\nBalancing of plants and trees in a garden\nAesthetics of plant shapes and colours\nGarden layout"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageLandscaping"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/landscaping"
+                android:contentDescription="Landscaping Image"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/headingLifeSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life Skills"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/labelFeesLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fees:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feesLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R1500"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelPurposeLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purpose:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/purposeLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To provide skills to navigate basic life necessities"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/labelContentLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opening a bank account\nBasic labour law (know your rights)\nBasic reading and writing literacy\nBasic numeric literacy"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageLifeSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/lifeskills2"
+                android:contentDescription="Life Skills Image"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBackToHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to Home"
+                android:backgroundTint="@color/black"
+                app:cornerRadius="0dp"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
